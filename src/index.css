@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body{
+  height: 100%;
+  margin: 0;
+}
+
+body{
+  
+  font-family: "Space Grotesk", sans-serif;
+  color: white;
+  background-color: #030102;
+  background-image: url("https://www.transparenttextures.com/patterns/ice-age.png");
+}
+
+/* .bg-img{
+  background-image: url("../src/assets/bg1.jpg");
+} */
