@@ -54,7 +54,10 @@ const MobileMenu = () => {
                 <a
                   href={menu.href}
                   className="flex flex-col items-center pt-6 cursor-pointer"
-                  onClick={() => setActive(i)}
+                  onClick={() => {
+                    setActive(i);
+                    setisOpen(false);
+                  }}
                 >
                   <span
                     className={`text-xl duration-500 ${

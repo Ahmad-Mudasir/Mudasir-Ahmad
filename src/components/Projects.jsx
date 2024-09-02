@@ -73,7 +73,7 @@ const Projects = () => {
                   href={project.live}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center bg-[#ec6e59] text-white px-4 py-2 rounded-md text-sm"
+                  className="flex items-center bg-[#ec6e59] text-white px-4 py-2 rounded-md text-sm duration-500 shadow-md hover:shadow-yellow-500"
                 >
                   Demo
                 </a>
@@ -81,7 +81,7 @@ const Projects = () => {
                   href={project.githubLink}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-1 px-4 py-2 border border-black rounded-md text-sm text-black bg-white "
+                  className="flex items-center gap-1 px-4 py-2 border border-black rounded-md text-sm text-black bg-white shadow-md duration-500 hover:shadow-yellow-500"
                 >
                   <AiFillGithub className="w-6 h-6" /> Code
                 </a>
@@ -92,7 +92,7 @@ const Projects = () => {
               <img
                 alt={project.name}
                 src={project.image}
-                className="rounded-md w-full  lg:w-[80%]"
+                className="rounded-md w-full shadow-lg shadow-green-500  lg:w-[80%]"
               />
             </div>
           </div>

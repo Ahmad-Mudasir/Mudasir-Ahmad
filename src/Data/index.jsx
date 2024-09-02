@@ -17,17 +17,26 @@ import { PiStudentFill } from "react-icons/pi";
 import projectImage1 from "../assets/project1.png";
 import projectImage2 from "../assets/project2.png";
 import projectImage3 from "../assets/project3.png";
+
+/* Eduction Image */
+import degree from "../assets/degree.jpeg";
+import database from "../assets/database.png";
+import React from "../assets/react.png";
 /* import projectImage4 from "../assets/project4.jpeg";
   import projectImage5 from "../assets/project5.jpeg";
   import projectImage6 from "../assets/project6.jpeg"; */
+import CodeAlpha from "../assets/CodeAlpha.png";
 
-/* import { RiReactjsLine } from "react-icons/ri";
-  import { TbBrandNextjs } from "react-icons/tb";
-  import { SiMongodb } from "react-icons/si";
-  import { DiRedis } from "react-icons/di";
-  import { FaNodeJs } from "react-icons/fa";
-  import { BiLogoPostgresql } from "react-icons/bi";
-   */
+import { RiReactjsLine } from "react-icons/ri";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiMongodb } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaNodeJs } from "react-icons/fa";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { DiMsqlServer } from "react-icons/di";
+import { SiVisualstudio } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
+
 export const NAVIGATION_LINKS = [
   {
     label: "Projects",
@@ -103,86 +112,94 @@ export const PROJECTS = [
     id: 3,
     name: "Responsive Social-Media Clone",
     description:
-      "A task management application built with React and Redux for efficient task tracking and team collaboration, including features like project boards, task assignment, and progress tracking.",
+      "I've developed a Responsible social media platform using HTML, CSS And JS, featuring customizable themes. Divided into three distinct sections—left, middle, and right—the platform offers users the freedom to personalize font sizes and colors according to their preferences.",
     image: projectImage3,
     live: "https://ahmad-mudasir.github.io/Responsive-social-website-CodeAlphaTask2/",
     githubLink:
       "https://github.com/Ahmad-Mudasir/Responsive-social-website-CodeAlphaTask2.git",
   },
-  /*  {
-      id: 4,
-      name: "Weather App",
-      description:
-        "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with React and styled-components.",
-      image: projectImage4,
-      githubLink: "https://github.com/user/weather-app",
-    },
-    {
-      id: 5,
-      name: "Blog Platform",
-      description:
-        "A blogging platform developed with Next.js and Markdown for creating, editing, and publishing blog posts. It features a rich text editor, tag system, and user authentication.",
-      image: projectImage5,
-      githubLink: "https://github.com/user/blog-platform",
-    },
-    {
-      id: 6,
-      name: "Chat Application",
-      description:
-        "A real-time chat application using Firebase for backend services, including user authentication, chat rooms, and instant messaging features. Built with React and Firebase.",
-      image: projectImage6,
-      githubLink: "https://github.com/user/chat-application",
-    }, */
 ];
 
-/*
-  export const BIO = [
-    "Carl Frank studied computer science at the University of Technology,from which he graduated in 2010. Following his education, he honed his craft and expertise over the course of 10 years at Tech Innovations Inc., where he immersed himself in the world of frontend development.",
-    "In 2021, driven by a shared vision for innovative web solutions and a passion for creating extraordinary user experiences Carl Frank co-founded WebArtistry alongside his creative partner, Jane Doe. Together, they set out to redefine frontend development, infusing their projects with creativity and cutting-edge technology.",
-    "As a multi-disciplinary frontend developer, Carl Frank brings a wealth of skills and expertise to his work. From his deep understanding of HTML, CSS, and JavaScript to his proficiency in modern frameworks like React and Vue.js, Carl Frank possesses a versatile skill set that allows him to craft stunning and unforgettable web experiences for his clients and audiences alike.",
-  ];
-  
-  export const SKILLS = [
-    {
-      icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
-      name: "React",
-      experience: "2+ years",
-    },
-    {
-      icon: <TbBrandNextjs className="text-4xl text-white lg:text-5xl" />,
-      name: "Next.js",
-      experience: "1+ year",
-    },
-    {
-      icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
-      name: "MongoDB",
-      experience: "1.5+ years",
-    },
-    {
-      icon: <DiRedis className="text-4xl text-red-600 lg:text-5xl" />,
-      name: "Redis",
-      experience: "1+ year",
-    },
-    {
-      icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
-      name: "Node.js",
-      experience: "2+ years",
-    },
-    {
-      icon: <BiLogoPostgresql className="text-4xl text-sky-700 lg:text-5xl" />,
-      name: "PostgreSQL",
-      experience: "1+ year",
-    },
-  ];
-  
-  export const EXPERIENCES = [
-    {
-      title: "Lead Frontend Developer",
-      company: "Innovative Tech Solutions",
-      duration: "July 2020 - Present",
-      description:
-        "As the Lead Frontend Developer, I spearheaded the development of advanced web applications using cutting-edge technologies like React, Redux, and TypeScript. I worked closely with cross-functional teams, including designers, product managers, and backend developers, to deliver seamless and high-performance user experiences.",
-    },
+export const BIO = [
+  {
+    paragraph:
+      " Hello, I'm Mudasir Ahmad, a passionate web developer with a strong foundation in  front-end and back-end technologies. With expertise in React, JavaScript, Node.js,Express, SQL, and PostgreSQL, I have created numerous projects that showcase my skills in responsive design, user experience, and full-stack development.I'm dedicated to continuous learning and love tackling new challenges that push my limits and help me grow as a developer. My journey in the tech world began with a deep curiosity for how things work.This curiosity has driven me to learn and master various programming languages and frameworks. I'm particularly passionate about building web applications that are not only functional but also visually appealing and user-friendly In addition to my technical skills, I value collaboration and enjoy working in teams to bring creative ideas to life. I am always eager to explore new opportunities and am committed to delivering high-quality work in every project I undertake.",
+    style: "shadow-gray-400",
+  },
+];
+
+export const SKILLS = [
+  {
+    id: 0,
+    icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
+    name: "React",
+    style: "shadow-cyan-400",
+  },
+  {
+    id: 1,
+    icon: <IoLogoJavascript className="text-4xl text-yellow-400 lg:text-5xl" />,
+    name: "javascript",
+    style: "shadow-yellow-500",
+  },
+
+  {
+    id: 2,
+    icon: <RiTailwindCssFill className="text-4xl text-sky-400 lg:text-5xl" />,
+    name: "Tailwind",
+    style: "shadow-sky-400",
+  },
+  {
+    id: 3,
+    icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
+    name: "MongoDB",
+    style: "shadow-green-500",
+  },
+
+  {
+    id: 4,
+    icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
+    name: "Node.js",
+    style: "shadow-lime-600",
+  },
+  {
+    id: 5,
+    icon: <BiLogoPostgresql className="text-4xl text-sky-700 lg:text-5xl" />,
+    name: "PostgreSQL",
+    style: "shadow-sky-700",
+  },
+  {
+    id: 6,
+    icon: <DiMsqlServer className="text-4xl text-red-400 lg:text-5xl" />,
+    name: "SQL",
+    style: "shadow-red-400",
+  },
+  {
+    id: 7,
+    icon: <FaGithub className="text-4xl text-gray-400 lg:text-5xl" />,
+    name: "GitHub",
+    style: "shadow-gray-400",
+  },
+
+  {
+    id: 8,
+    icon: <SiVisualstudio className="text-4xl text-blue-400 lg:text-5xl" />,
+    name: "Visual Studio Code",
+    style: "shadow-blue-400",
+  },
+];
+
+export const EXPERIENCES = [
+  {
+    id: "0",
+    title: "Frond-end Internship",
+    company: "Code Alpha",
+    description:
+      "I successfully completed my internship, focusing on front-end web development.Enhanced user experience by developing responsive and interactive web applications. Streamlined codebase by refactoring HTML, CSS, and JavaScript for improved performance and maintainability. Utilized version control tools like Git to manage code within a team  environment, reducing merge conflicts and fostering collaboration. I gained hands-on experience with modern web development tools and frameworks, improving my technical and problem-solving skills.",
+    timePeriod: "March 2024 - April 2024",
+    img: CodeAlpha,
+  },
+
+  /*
     {
       title: "Frontend Engineer",
       company: "Digital Creations",
@@ -198,8 +215,8 @@ export const PROJECTS = [
         "In my role as a Junior Web Developer, I assisted in the development and maintenance of various web applications. I gained hands-on experience in utilizing HTML, CSS, and JavaScript to create user-friendly interfaces. I actively participated in team meetings, contributed to project planning, and collaborated with senior developers to implement new features.",
     },
   ];
-  
-  export const EDUCATION = [
+  */
+  /* export const EDUCATION = [
     {
       degree: "Master of Science in Computer Science",
       institution: "Stanford University",
@@ -215,8 +232,8 @@ export const PROJECTS = [
         "Focused on web development, programming languages, and database management. Actively involved in coding clubs and hackathons, where I developed several web applications using HTML, CSS, JavaScript, and PHP. Completed a senior project on developing an e-commerce platform. Graduated with a high GPA.",
     },
   ];
-  
-  export const SOCIAL_MEDIA_LINKS = [
+   */
+  /* export const SOCIAL_MEDIA_LINKS = [
     {
       href: "https://x.com/",
       icon: <FaFacebook fontSize={25} className="hover:opacity-80" />,
@@ -241,4 +258,34 @@ export const PROJECTS = [
       href: "https://www.linkedin.com/",
       icon: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
     },
-  ]; */
+    */
+];
+
+export const educationData = [
+  {
+    id: 1,
+    collegeName: "University Of Agriculture Peshawar",
+    degree: "Bachelor of Science in Computer Science",
+    cgpa: "CGPA:3.59/4.0",
+    timePeriod: "2020 - 2024",
+    certificateImage: degree,
+  },
+
+  {
+    id: 2,
+    collegeName: "University of Colorado",
+    degree: "Database Management Essentials",
+
+    timePeriod: "Jun 5 2022",
+    certificateImage: database,
+  },
+
+  {
+    id: 3,
+    collegeName: "Coursera",
+    degree: "Introduction to Front-end Development with ReactJS",
+
+    timePeriod: "Feb 16, 2024",
+    certificateImage: React,
+  },
+];

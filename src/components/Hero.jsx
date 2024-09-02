@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="w-full md:w-1/2 lg:p-8">
         <div className="flex justify-center">
           <img
-            className="rounded-3xl"
+            className="rounded-3xl w-96 shadow-md shadow-red-400"
             src={personimg}
             width={450}
             height={450}
