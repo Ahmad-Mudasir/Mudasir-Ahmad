@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import ParticlesBackground from "./components/ParticlesBackground";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Experience/>
         <Education/>
         <Contact/>
+        <Footer/>
       </div>
     </div>
 

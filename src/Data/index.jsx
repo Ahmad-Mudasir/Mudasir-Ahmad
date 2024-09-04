@@ -1,12 +1,7 @@
-/* import {
-    FaXTwitter,
-    FaGithub,
-    FaLinkedin,
-    FaFacebook,
-    FaDiscord,
-    FaInstagram,
-  } from "react-icon";
-   */
+/* Links of social media */
+import { FaLinkedin } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 import { BsFillPersonVcardFill, BsFileCodeFill } from "react-icons/bs";
 import { GrProjects } from "react-icons/gr";
@@ -129,11 +124,12 @@ export const BIO = [
 ];
 
 export const SKILLS = [
-  {
+  { 
     id: 0,
     icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
     name: "React",
     style: "shadow-cyan-400",
+    transions:"duration-1"
   },
   {
     id: 1,
@@ -199,66 +195,28 @@ export const EXPERIENCES = [
     img: CodeAlpha,
   },
 
-  /*
+]
+ 
+  export const SOCIAL_MEDIA_LINKS = [
     {
-      title: "Frontend Engineer",
-      company: "Digital Creations",
-      duration: "February 2016 - June 2020",
-      description:
-        "At Digital Creations, I focused on building highly interactive and responsive web interfaces using HTML, CSS, JavaScript, and modern libraries like React. I collaborated closely with UX/UI designers to implement design changes that enhanced user engagement and satisfaction. My role involved optimizing website performance, ensuring cross-browser compatibility, and implementing SEO best practices. ",
+      href: "https://www.facebook.com/profile.php?id=100006930331146&mibextid=JRoKGi",
+      icon: <FaFacebookSquare fontSize={25} className="  hover:opacity-80" />,
     },
+    
     {
-      title: "Junior Web Developer",
-      company: "Bright Future Technologies",
-      duration: "August 2014 - January 2016",
-      description:
-        "In my role as a Junior Web Developer, I assisted in the development and maintenance of various web applications. I gained hands-on experience in utilizing HTML, CSS, and JavaScript to create user-friendly interfaces. I actively participated in team meetings, contributed to project planning, and collaborated with senior developers to implement new features.",
+      href: "https://www.instagram.com/ahmad_nawaaz11?igsh=MXJmdXFrdjIzM2toaA%3D%3D&utm_source=qr",
+      icon: <FaInstagram fontSize={25} className="text- hover:opacity-80" />,
     },
-  ];
-  */
-  /* export const EDUCATION = [
+    
     {
-      degree: "Master of Science in Computer Science",
-      institution: "Stanford University",
-      duration: "September 2012 - June 2014",
-      description:
-        "Specialized in Human-Computer Interaction and Software Engineering. Completed a thesis on enhancing user experience in web applications through advanced interactive techniques. Participated in various projects involving frontend development, algorithms, and data structures. Graduated with honors.",
-    },
-    {
-      degree: "Bachelor of Science in Information Technology",
-      institution: "University of California, Berkeley",
-      duration: "September 2008 - June 2012",
-      description:
-        "Focused on web development, programming languages, and database management. Actively involved in coding clubs and hackathons, where I developed several web applications using HTML, CSS, JavaScript, and PHP. Completed a senior project on developing an e-commerce platform. Graduated with a high GPA.",
-    },
-  ];
-   */
-  /* export const SOCIAL_MEDIA_LINKS = [
-    {
-      href: "https://x.com/",
-      icon: <FaFacebook fontSize={25} className="hover:opacity-80" />,
-    },
-    {
-      href: "https://x.com/",
-      icon: <FaDiscord fontSize={25} className="hover:opacity-80" />,
-    },
-    {
-      href: "https://x.com/",
-      icon: <FaInstagram fontSize={25} className="hover:opacity-80" />,
-    },
-    {
-      href: "https://x.com/",
-      icon: <FaXTwitter fontSize={25} className="hover:opacity-80" />,
-    },
-    {
-      href: "https://github.com/",
+      href: "https://github.com/Ahmad-Mudasir",
       icon: <FaGithub fontSize={25} className="hover:opacity-80" />,
     },
     {
-      href: "https://www.linkedin.com/",
+      href: "https://www.linkedin.com/in/mudasir-ahmad1/",
       icon: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
     },
-    */
+   
 ];
 
 export const educationData = [

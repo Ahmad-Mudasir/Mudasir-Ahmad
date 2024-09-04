@@ -1,7 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
-
+import { motion } from "framer-motion";
 const Contact = () => {
   /* for input data */
   const [inputdata, setinputdata] = useState({
@@ -68,11 +68,23 @@ const Contact = () => {
   return (
     <div className="p-4 lg:w-3/4 " id="contact">
       <Toaster />
-      <h2 className="text-center text-4xl  font-semibold my-8 tracking-tighter">
-      Let&apos;s <span className="text-rose-500 ml-2">Connect</span>
-      </h2>
+      <motion.h2
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="text-center text-4xl  font-semibold my-8 tracking-tighter"
+      >
+        Let&apos;s <span className="text-rose-500 ml-2">Connect</span>
+      </motion.h2>
       <form className="shadow-md shadow-green-500 p-3" onSubmit={Handlesubmit}>
-        <div className="flex mb-8 space-x-4">
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="flex mb-8 space-x-4"
+        >
           <div className="lg:w-1/2">
             <input
               type="text"
@@ -102,9 +114,15 @@ const Contact = () => {
               <p className="text-rose-800 text-sm">{error.email};</p>
             )}
           </div>
-        </div>
+        </motion.div>
 
-        <div className="mb-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="mb-4"
+        >
           <textarea
             id="message"
             name="message"
@@ -117,7 +135,7 @@ const Contact = () => {
           {error.message && (
             <p className="text-rose-800 text-sm">{error.message};</p>
           )}
-        </div>
+        </motion.div>
         <button
           type="submit"
           className={`mb-8 w-full rounded border border-stone-50/30 bg-stone-200 px-4 py-2 text-sm font-semibold text-stone-900 hover:bg-stone-300 ${
