@@ -100,7 +100,7 @@ export const PROJECTS = [
     description:
       "  The Keeper Web App allows users to create, view, and delete notes. The app features an intuitive and responsive user interface, making it easy to manage notes in a visually appealing way.",
     image: projectImage2,
-    live: "(https://keeper-web-app-xaks.vercel.app/",
+    live: "https://keeper-web-app-xaks.vercel.app/",
     githubLink: "https://github.com/Ahmad-Mudasir/Keeper-Web-App.git",
   },
   {
@@ -129,7 +129,7 @@ export const SKILLS = [
     icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
     name: "React",
     style: "shadow-cyan-400",
-    transions:"duration-1"
+   
   },
   {
     id: 1,
