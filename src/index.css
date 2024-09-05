@@ -14,10 +14,10 @@ body{
   
   font-family: "Space Grotesk", sans-serif;
   color: white;
-  background-color: #030102;
+  
+  background-color:#030102;
   background-image: url("https://www.transparenttextures.com/patterns/ice-age.png");
 }
 
-/* .bg-img{
-  background-image: url("../src/assets/bg1.jpg");
-} */
+
+
