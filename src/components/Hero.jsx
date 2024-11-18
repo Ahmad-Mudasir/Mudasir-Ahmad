@@ -1,5 +1,5 @@
 import { HERO } from "../Data";
-import personimg from "../assets/person.png";
+import personimg from "../assets/person.jpg";
 import { motion } from "framer-motion";
 const Hero = () => {
   return (
@@ -19,7 +19,8 @@ const Hero = () => {
           viewport={{ once: true }}
           className="my-8 p-2 font-bold lg:text[7rem] md:text-5xl text-4xl"
         >
-          {HERO.name}
+          {HERO.title1}
+          <span className="text-sky-300">{HERO.title2}</span>
         </motion.h2>
         <p className="p-2 text-3xl lg:text-4xl">{HERO.greet}</p>
         <p className="mb-8 p-2 text-xl">{HERO.description}</p>

@@ -78,7 +78,8 @@ export const NAVIGATION_LINKS = [
 ];
 
 export const HERO = {
-  name: "Mudasir Ahmad",
+  title1: "Trust me, I'm a ",
+  title2: "software engineer.",
   greet: "Hello there! 👋🏻",
   description:
     "Recent BS Computer Science graduate with a strong foundation in web development, having completed numerous projects during academic tenure. Experienced in full-stack development, including both front-end and back-end technologies.",
@@ -118,7 +119,7 @@ export const PROJECTS = [
 export const BIO = [
   {
     paragraph:
-      " Hello, I'm Mudasir Ahmad, a passionate web developer with a strong foundation in  front-end and back-end technologies. With expertise in React, JavaScript, Node.js,Express, SQL, and PostgreSQL, I have created numerous projects that showcase my skills in responsive design, user experience, and full-stack development.I'm dedicated to continuous learning and love tackling new challenges that push my limits and help me grow as a developer. My journey in the tech world began with a deep curiosity for how things work.This curiosity has driven me to learn and master various programming languages and frameworks. I'm particularly passionate about building web applications that are not only functional but also visually appealing and user-friendly In addition to my technical skills, I value collaboration and enjoy working in teams to bring creative ideas to life. I am always eager to explore new opportunities and am committed to delivering high-quality work in every project I undertake.",
+      "Hello! My name is Mudasir Ahmad.for the past two years. During my time here, I gained valuable experience through various entry-level positions and self learning, which greatly enhanced my work ethic, communication skills, and adaptability.My journey into the world of technology began with a strong passion for problem-solving, which led me to pursue the Computer Systems Technology program. Despite its challenges, I remained determined and forged lasting friendships that supported me throughout this demanding program. Throughout my studies at BCCS, I had the opportunity to engage in fascinating projects.",
     style: "shadow-gray-400",
   },
 ];

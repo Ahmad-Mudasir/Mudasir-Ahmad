@@ -13,7 +13,7 @@ const Bio = () => {
         >
           Bio
         </motion.h2>
-        <div className="flex flex-col gap-4 text-lg sm:text-xl leading-relaxed max-w-4xl mx-auto">
+        <div className="flex flex-col  gap-4 text-lg sm:text-xl leading-relaxed max-w-4xl mx-auto">
           {BIO.map((bio, index) => (
             <motion.p
               initial={{ opacity: 0, x: -50 }}
