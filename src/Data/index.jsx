@@ -56,7 +56,7 @@ export const NAVIGATION_LINKS = [
     label: "Bio",
     href: "#bio",
     icon: <BsFillPersonVcardFill />,
-    dis: "translate-x-[-250px]",
+    dis: "translate-x-[-245px]",
     disMobile: "translate-y-[73px]",
   },
   {
