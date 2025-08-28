@@ -186,20 +186,25 @@ function Education() {
             </svg>
           </button>
 
-          <div className="flex justify-center mt-6 sm:mt-8 space-x-2">
+          <div
+            className="flex justify-center mt-6 sm:mt-8 space-x-1.5"
+            role="tablist"
+            aria-label="Certificates pagination"
+          >
             {educationData.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
                 className={`
-                  w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-all duration-200
+                  h-1.5 sm:h-1.5 rounded-full transition-all duration-200
                   ${
                     index === currentSlide
-                      ? "bg-sky-400 scale-125"
-                      : "bg-gray-500 hover:bg-gray-400"
+                      ? "w-5 sm:w-5 h-[5px] bg-sky-400"
+                      : "w-4 sm:w-4 h-[5px] bg-gray-500 hover:bg-gray-400"
                   }
                 `}
                 aria-label={`Go to slide ${index + 1}`}
+                aria-current={index === currentSlide ? "true" : undefined}
               />
             ))}
           </div>
