@@ -17,6 +17,18 @@ import projectImage3 from "../assets/project3.png";
 import degree from "../assets/degree.jpeg";
 import database from "../assets/database.png";
 import React from "../assets/react.png";
+import JavaScript from "../assets/coursera-javascript.png";
+import python from "../assets/coursera-python.png";
+import AdvancedReact from "../assets/coursera-Advance-React.png";
+import FigmaToCode from "../assets/coursera-figma-to-code.png";
+import Redux from "../assets/coursera-Redux.png";
+import htmlCss from "../assets/coursera-Responsivness.png";
+import tailwind from "../assets/coursera-Tailwindcss.png";
+import learnToCodeAi from "../assets/coursera-coding-with-AI.png";
+import nextjs from "../assets/coursera-NextJs.png";
+import typescript from "../assets/coursera-Typescript.png";
+import boardInfinity from "../assets/coursera-database-Managment.png";
+
 /* import projectImage4 from "../assets/project4.jpeg";
   import projectImage5 from "../assets/project5.jpeg";
   import projectImage6 from "../assets/project6.jpeg"; */
@@ -125,12 +137,11 @@ export const BIO = [
 ];
 
 export const SKILLS = [
-  { 
+  {
     id: 0,
     icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
     name: "React",
     style: "shadow-cyan-400",
-   
   },
   {
     id: 1,
@@ -195,29 +206,27 @@ export const EXPERIENCES = [
     timePeriod: "March 2024 - April 2024",
     img: CodeAlpha,
   },
+];
 
-]
- 
-  export const SOCIAL_MEDIA_LINKS = [
-    {
-      href: "https://www.facebook.com/profile.php?id=100006930331146&mibextid=JRoKGi",
-      icon: <FaFacebookSquare fontSize={25} className="  hover:opacity-80" />,
-    },
-    
-    {
-      href: "https://www.instagram.com/ahmad_nawaaz11?igsh=MXJmdXFrdjIzM2toaA%3D%3D&utm_source=qr",
-      icon: <FaInstagram fontSize={25} className="text- hover:opacity-80" />,
-    },
-    
-    {
-      href: "https://github.com/Ahmad-Mudasir",
-      icon: <FaGithub fontSize={25} className="hover:opacity-80" />,
-    },
-    {
-      href: "https://www.linkedin.com/in/mudasir-ahmad1/",
-      icon: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
-    },
-   
+export const SOCIAL_MEDIA_LINKS = [
+  {
+    href: "https://www.facebook.com/profile.php?id=100006930331146&mibextid=JRoKGi",
+    icon: <FaFacebookSquare fontSize={25} className="  hover:opacity-80" />,
+  },
+
+  {
+    href: "https://www.instagram.com/ahmad_nawaaz11?igsh=MXJmdXFrdjIzM2toaA%3D%3D&utm_source=qr",
+    icon: <FaInstagram fontSize={25} className="text- hover:opacity-80" />,
+  },
+
+  {
+    href: "https://github.com/Ahmad-Mudasir",
+    icon: <FaGithub fontSize={25} className="hover:opacity-80" />,
+  },
+  {
+    href: "https://www.linkedin.com/in/mudasir-ahmad1/",
+    icon: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
+  },
 ];
 
 export const educationData = [
@@ -237,14 +246,118 @@ export const educationData = [
 
     timePeriod: "Jun 5 2022",
     certificateImage: database,
+    credentialLink: "https://coursera.org/verify/39G9AHCEXQ6Y",
   },
 
   {
     id: 3,
+    collegeName: "Meta",
+    degree: "Programming with JavaScript",
+
+    timePeriod: "Nov 12, 2023",
+    certificateImage: JavaScript,
+    credentialLink: "https://coursera.org/verify/5R49XA9J4HUS",
+  },
+
+  {
+    id: 4,
     collegeName: "Coursera",
     degree: "Introduction to Front-end Development with ReactJS",
 
     timePeriod: "Feb 16, 2024",
     certificateImage: React,
+    credentialLink: "https://coursera.org/verify/7Q5YXZTTJUMW",
+  },
+
+  {
+    id: 5,
+    collegeName: "University of Michigan",
+    degree: "Programming for Everybody (Getting Started with Python)",
+
+    timePeriod: "Sep 16, 2023",
+    certificateImage: python,
+    credentialLink: "https://coursera.org/verify/P572CFFAR3CF",
+  },
+
+  {
+    id: 6,
+    collegeName: "Meta",
+    degree: "Advanced React",
+
+    timePeriod: "Jan 7, 2025",
+    certificateImage: AdvancedReact,
+    credentialLink: "https://coursera.org/verify/IK6UY25YX3ZU",
+  },
+
+  {
+    id: 7,
+    collegeName: "Scrimba coursera",
+    degree: "From Figma to Code",
+    timePeriod: "Jan 11, 2025",
+    certificateImage: FigmaToCode,
+    credentialLink: "https://coursera.org/verify/PNLMFE7Y6VY2",
+  },
+
+  {
+    id: 8,
+    collegeName: "Scrimba coursera",
+    degree: "Redux in JavaScript and React",
+    timePeriod: "Feb 18 , 2025",
+    certificateImage: Redux,
+    credentialLink: "https://coursera.org/verify/J0QSUNGN9WAN",
+  },
+
+  {
+    id: 9,
+    collegeName: "Scrimba coursera",
+    degree: "Build a Responsive Website with HTML and CSS",
+    timePeriod: "Feb 13, 2025",
+    certificateImage: htmlCss,
+    credentialLink: "https://coursera.org/verify/FY3507IHLV88",
+  },
+
+  {
+    id: 10,
+    collegeName: "Scrimba coursera",
+    degree: "Tailwind CSS",
+    timePeriod: "Apr 5, 2025",
+    certificateImage: tailwind,
+    credentialLink: "https://coursera.org/verify/2X5G3JAM5JZY",
+  },
+
+  {
+    id: 11,
+    collegeName: "Scrimba coursera",
+    degree: "Learn to code with AI",
+    timePeriod: "May 10, 2025",
+    certificateImage: learnToCodeAi,
+    credentialLink: "https://coursera.org/verify/DE402N6I6E6P",
+  },
+
+  {
+    id: 12,
+    collegeName: "Scrimba coursera",
+    degree: "Next.js",
+    timePeriod: "May 16, 2025",
+    certificateImage: nextjs,
+    credentialLink: "https://coursera.org/verify/YXUPA6T45YX9",
+  },
+
+  {
+    id: 13,
+    collegeName: "Scrimba coursera",
+    degree: "Typescript",
+    timePeriod: "Jun 10, 2025",
+    certificateImage: typescript,
+    credentialLink: "https://coursera.org/verify/G6OYMJZ0Z3JW",
+  },
+
+  {
+    id: 14,
+    collegeName: "Board Infnity",
+    degree: "Managing Databases - End to End Web Development",
+    timePeriod: "Jun 12, 2025",
+    certificateImage: boardInfinity,
+    credentialLink: "https://coursera.org/verify/4C1D03DL9T21",
   },
 ];
