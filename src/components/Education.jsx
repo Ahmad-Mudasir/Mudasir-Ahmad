@@ -20,13 +20,13 @@ function Education() {
   const goToSlide = (index) => {
     setCurrentSlide(index);
     setIsAutoPlay(false);
-    setTimeout(() => setIsAutoPlay(true), 5000);
+    setTimeout(() => setIsAutoPlay(true), 4000);
   };
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % educationData.length);
     setIsAutoPlay(false);
-    setTimeout(() => setIsAutoPlay(true), 5000);
+    setTimeout(() => setIsAutoPlay(true), 1000);
   };
 
   const prevSlide = () => {
