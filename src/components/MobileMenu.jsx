@@ -5,7 +5,7 @@ const MobileMenu = () => {
   const [isOpen, setisOpen] = useState(false);
   const [active, setActive] = useState(0);
   return (
-    <div className="fixed inset-0 m-1 h-[70px] flex justify-between p-3 items-center shadow-md rounded-lg border border-stone-50/30 bg-black/20 backdrop-blur-lg">
+    <div className="fixed z-[90] inset-0 m-1 h-[70px] flex justify-between p-3 items-center shadow-md rounded-lg border border-stone-50/30 bg-black/20 backdrop-blur-lg">
       {/* For Logo */}
       <div>
         <img src={logo} alt="Logo" className="h-20 w-52" />

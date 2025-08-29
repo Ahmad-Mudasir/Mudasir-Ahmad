@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed lg:flex hidden min-h-[5.4rem] px-6 w-[60rem] justify-center items-center shadow-md rounded-lg border border-stone-50/30 bg-black/20 backdrop-blur-lg">
+      <nav className="fixed z-[90] lg:flex hidden min-h-[5.4rem] px-6 w-[60rem] justify-center items-center shadow-md rounded-lg border border-stone-50/30 bg-black/20 backdrop-blur-lg">
         <ul className="flex relative w-full justify-around max-w-4xl">
           <span
             className={`bg-[#0ef] duration-500 ${NAVIGATION_LINKS[active].dis} border-4 border-red-300 border-t-0  border-t-yellow-100 h-16 w-16 absolute

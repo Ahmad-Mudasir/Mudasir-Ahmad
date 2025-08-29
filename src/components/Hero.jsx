@@ -3,14 +3,14 @@ import personimg from "../assets/person.jpg";
 import { motion } from "framer-motion";
 const Hero = () => {
   return (
-    <section className="flex flex-wrap min-h-screen items-center ">
+    <section className="flex  min-h-screen items-center max-lg:flex-col">
       {/* Left Div */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="w-full md:w-1/2"
+        className="w-full lg:w-1/2"
       >
         <motion.h2
           initial={{ y: -50 }}
@@ -34,7 +34,7 @@ const Hero = () => {
         viewport={{ once: true }}
         className="w-full md:w-1/2 lg:p-8"
       >
-        <div className="flex justify-center">
+        <div className="flex justify-center md:justify-end">
           <img
             className="rounded-3xl w-96 shadow-md shadow-red-400"
             src={personimg}

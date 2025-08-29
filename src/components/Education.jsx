@@ -199,8 +199,8 @@ function Education() {
                   h-1.5 sm:h-1.5 rounded-full transition-all duration-200
                   ${
                     index === currentSlide
-                      ? "w-5 sm:w-5 h-[5px] bg-sky-400"
-                      : "w-4 sm:w-4 h-[5px] bg-gray-500 hover:bg-gray-400"
+                      ? "w-[20px] bg-[#1E5CF1]"
+                      : "w-[5px] bg-gray-500"
                   }
                 `}
                 aria-label={`Go to slide ${index + 1}`}
