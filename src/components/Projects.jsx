@@ -17,16 +17,19 @@ const Projects = () => {
   };
 
   return (
-    <section className="pt-20 -z-40" id="projects">
+    <section className="pt-20 -z-40 relative overflow-hidden" id="projects">
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="mb-10 text-center text-3xl lg:text-4xl"
+        className="mb-6 text-center text-white text-3xl sm:text-4xl font-extrabold"
       >
         Projects
       </motion.h2>
+
+      {/* Accent line under title */}
+      <div className="mx-auto my-6 h-px max-w-3xl bg-gradient-to-r from-transparent via-[#0ef]/40 to-transparent" />
 
       <motion.div
         variants={container}
@@ -41,7 +44,7 @@ const Projects = () => {
               key={project.id}
               variants={card}
               whileHover={{ y: -6 }}
-              className="group relative rounded-xl border border-white/10 bg-transparent p-3 shadow-md shadow-green-500/20  transition-colors duration-300 hover:border-[#1E5CF1]/40 h-full flex flex-col"
+              className="group relative rounded-xl border border-white/10 bg-transparent p-3 shadow-md shadow-green-500/20 transition-colors duration-300 hover:border-white/30 h-full flex flex-col"
             >
               <div className="relative overflow-hidden rounded-lg">
                 <img
@@ -67,7 +70,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                     aria-label={`Open live demo of ${project.name}`}
-                    className="inline-flex items-center rounded-md bg-[#ec6e59] px-3 py-2 text-sm font-medium text-white shadow-md transition-all duration-300 hover:shadow-yellow-500/80 focus:outline-none focus:ring-2 focus:ring-[#ec6e59]/50"
+                    className="inline-flex items-center rounded-md bg-[#ec6e59] px-3 py-2 text-sm font-medium text-white shadow-md transition-all duration-300 hover:shadow-yellow-500 focus:outline-none focus:ring-2 focus:ring-[#ec6e59]/40"
                   >
                     Demo
                   </a>
@@ -76,14 +79,12 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                     aria-label={`View source code of ${project.name} on GitHub`}
-                    className="inline-flex items-center gap-2 rounded-md border border-white/20 bg-white/5 px-3 py-2 text-sm font-medium text-white shadow-md transition-all duration-300 hover:border-[#1E5CF1]/50 hover:shadow-[#1E5CF1]/30 focus:outline-none focus:ring-2 focus:ring-[#1E5CF1]/40"
+                    className="inline-flex items-center gap-2 rounded-md border border-white/20 bg-white/5 px-3 py-2 text-sm font-medium text-white shadow-md transition-all duration-300 hover:shadow-yellow-500 hover:border-white/40 focus:outline-none focus:ring-2 focus:ring-white/30"
                   >
                     <AiFillGithub className="h-5 w-5" /> Code
                   </a>
                 </div>
               </div>
-
-              <div className="pointer-events-none absolute inset-0 -z-10 rounded-xl bg-gradient-to-br from-[#1E5CF1]/10 via-transparent to-[#ec6e59]/20 opacity-0 blur transition-opacity duration-300 group-hover:opacity-100" />
             </motion.article>
           ))}
         </div>

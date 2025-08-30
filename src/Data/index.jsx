@@ -94,7 +94,7 @@ export const HERO = {
   title2: "software engineer.",
   greet: "Hello there! 👋🏻",
   description:
-    "Recent BS Computer Science graduate with a strong foundation in web development, having completed numerous projects during academic tenure. Experienced in full-stack development, including both front-end and back-end technologies.",
+    "BS Computer Science graduate with 1 year of hands-on experience in modern web development. MERN stack developer Proficient in popular frameworks such as React, Familiar with server-side technologies like Node.js and ExpressJS, as well as database management with SQL, PostgreSQL and MongoDB Databases.",
 };
 
 export const PROJECTS = [
@@ -131,7 +131,7 @@ export const PROJECTS = [
 export const BIO = [
   {
     paragraph:
-      "Hello! My name is Mudasir Ahmad.for the past two years. During my time here, I gained valuable experience through various entry-level positions and self learning, which greatly enhanced my work ethic, communication skills, and adaptability.My journey into the world of technology began with a strong passion for problem-solving, which led me to pursue the Computer Systems Technology program. Despite its challenges, I remained determined and forged lasting friendships that supported me throughout this demanding program. Throughout my studies at BCCS, I had the opportunity to engage in fascinating projects.",
+      "Hello! I’m Mudasir Ahmad, a passionate web developer with one year of professional experience in building and enhancing modern web applications. I have a strong academic background, consistently ranking among the top 5 in my batch, which reflects my dedication and problem-solving skills.Over the past year, I’ve gained hands-on experience in fullstack development, collaborating with teams to deliver clean, efficient, and user-friendly solutions. I enjoy working in dynamic environments where I can learn, share knowledge, and take on new challenges.I’m now seeking opportunities to contribute my skills and continue growing as a developer within forward-thinking organizations.",
     style: "shadow-gray-400",
   },
 ];

@@ -154,16 +154,19 @@ const Experience = () => {
         viewport={{ once: true, margin: "-100px" }}
         variants={containerVariants}
         id="work"
-        className="min-h-screen  lg:min-h-[100%] font-bai  px-4 md:px-12 text-white"
+        className="min-h-fit  md:min-h-[100%] font-bai    px-4 md:px-12 text-white"
       >
         {/* Main Content */}
-        <div className="max-w-[1400px]   mx-auto px-6 pt-7">
+        <div className="max-w-[1400px]   mx-auto px-6 pt-32">
           <motion.h1
             variants={itemVariants}
-            className="text-lg xs:text-2xl md:text-4xl text-center lg:text-5xl font-medium mb-12"
+            className="text-4xl xs:text-4xl md:text-4xl text-center lg:text-5xl font-medium mb-4"
           >
             Experience
           </motion.h1>
+
+          {/* Accent line under title */}
+          <div className="mx-auto mb-8 h-px max-w-3xl bg-gradient-to-r from-transparent via-[#0ef]/40 to-transparent" />
 
           <motion.div
             variants={itemVariants}
@@ -275,7 +278,7 @@ const Experience = () => {
             {/* Right Side - Placeholder for 3D Steps */}
             <motion.div
               variants={itemVariants}
-              className=" relative border-t-[1px] lg:border-t-0 lg:border-l-[1px]  border-[#404040] mx-auto w-full  md:w-[600px] mt-3 lg:mt-0 pl-0  md:pl-5 pt-12 h-[281px]"
+              className=" relative border-t-[1px] lg:border-t-0 lg:border-l-[1px]  border-[#404040] mx-auto w-full  md:w-[600px] mt-3 lg:mt-0 pl-0  md:pl-5 pt-12 h-[280px]"
             >
               {/* Add 3D visuals or steps here if needed */}
               {currentSteps.map((step, index) => (

@@ -18,6 +18,35 @@ body{
   
   background-color:#030102;
   background-image: url("https://www.transparenttextures.com/patterns/ice-age.png");
+  position: relative;
+}
+
+/* Global cyan side lighting */
+body::before{
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(50rem 50rem at 0% 20%, rgba(0,238,255,0.14), transparent 60%),
+    radial-gradient(40rem 40rem at 100% 60%, rgba(0,238,255,0.10), transparent 60%);
+  filter: blur(12px);
+}
+
+/* Optional stronger cyan glow utility */
+.cyan-glow {
+  box-shadow: 0 0 30px rgba(0,238,255,0.35), 0 0 60px rgba(0,238,255,0.2) inset;
+}
+
+/* Swing animation for hanging CV button */
+@keyframes swing {
+  0% { transform: rotate(-4deg); }
+  50% { transform: rotate(4deg); }
+  100% { transform: rotate(-4deg); }
+}
+.swing {
+  animation: swing 3s ease-in-out infinite;
 }
 
 

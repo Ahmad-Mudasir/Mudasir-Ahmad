@@ -11,28 +11,22 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-  
-    
     <div className="relative h-full antialiased overflow-y-auto">
-    
-   <ParticlesBackground/>
-
-
+      <ParticlesBackground />
 
       <div className="fixed bg-fixed inset-0 bg-cover bg-center bg-img"></div>
       <div className="container relative flex flex-col items-center z-10 p-4 space-y-8 mx-auto">
         <Navbar />
         <Hero />
         <Projects />
-        <Bio/>
-        <Skills/>
-        <Experience/>
-        <Education/>
-        <Contact/>
-        <Footer/>
+        <Bio />
+        <Skills />
+        <Experience />
+        <Education />
+        <Contact />
+        <Footer />
       </div>
     </div>
-
   );
 }
 

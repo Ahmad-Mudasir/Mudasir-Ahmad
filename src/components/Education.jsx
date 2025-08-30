@@ -40,19 +40,20 @@ function Education() {
   return (
     <section
       id="education"
-      className="shadow-md text-white py-20 px-4 -z-50 overflow-x-hidden"
+      className="shadow-md text-white  md:py-20   px-4 -z-50 overflow-x-hidden"
     >
-      <div className="sm:max-w-7xl w-[85vw] mx-auto p-4 shadow-md shadow-gray-400">
-        <motion.h2
-          initial={{ opacity: 0, y: -50 }}
-          whileInView={{ opacity: 2, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
-          className="text-3xl font-bold text-center text-white mb-8"
-        >
-          Education & Certifications
-        </motion.h2>
-
+      <motion.h2
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="text-3xl font-bold text-center mb-4 bg-gradient-to-r from-[#0ef] via-white to-[#0ef] bg-clip-text text-white"
+      >
+        Education & Certifications
+      </motion.h2>
+      <div className="mx-auto mb-8 h-px max-w-3xl bg-gradient-to-r from-transparent via-[#0ef]/40 to-transparent" />
+      <div className="sm:max-w-7xl w-[85vw] mx-auto p-4 shadow-md  shadow-gray-400">
         <div className="relative  pt-10 px-4 sm:px-0">
           {/* Carousel Container */}
           <div className="relative  overflow-x-hidden overflow-y-visible">
